@@ -16,7 +16,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 Write the command that you used to do this below:
 ----------
 
-
+cd ~
 
 ==========
 2. Prove that you're in your home directory.
@@ -24,6 +24,9 @@ Write the command that you used to do this below:
 Write the command that you used to do this - as well as its output - below :
 ----------
 
+ent-v314-007:Desktop student$ cd ~
+ent-v314-007:~ student$ pwd
+/Users/student
 
 
 ==========
@@ -31,6 +34,20 @@ Write the command that you used to do this - as well as its output - below :
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
+NO
+
+ent-v314-007:~ student$ ls
+AMALogger20190109.log	Library			filename.txt
+AMALogger20190204.log	MPLABXProjects		google.html
+AMALogger20190206.log	Mosalah11-Mtec1003	ipe.properties
+AMALogger20190211.log	Movies			isus
+AMALogger20190213.log	Music			mtec1002-lab-03.tar.gz.
+Adlm			New Unity Project	mtech1002-lab02.zip
+Adobe			Pictures		pizza
+Applications		Public			pymel.log
+Desktop			QLData			stuff
+Documents		Things			xgen
+Downloads		coolforest.jpg
 
 
 
