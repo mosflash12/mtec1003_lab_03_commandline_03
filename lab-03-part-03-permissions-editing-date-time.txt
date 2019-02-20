@@ -18,14 +18,22 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 What command did you use, and what was its output?
 ----------
 
-
+V217-M11:~ dexter.manswell85$ date
+Wed Feb 20 11:19:19 EST 2019
 
 ==========
 2. Print out a calendar for this month.
 
 What command did you use, and what was its output?
 ----------
-
+V217-M11:~ dexter.manswell85$ cal
+   February 2019      
+Su Mo Tu We Th Fr Sa  
+                1  2  
+ 3  4  5  6  7  8  9  
+10 11 12 13 14 15 16  
+17 18 19 20 21 22 23  
+24 25 26 27 28    
 
 
 ==========
@@ -34,7 +42,7 @@ What command did you use, and what was its output?
 What commands did you use to do this?
 ----------
 
-
+cd ~
 
 ==========
 4. Create an empty file called copy_to_backup.sh.  Verify that the file exists.
@@ -42,7 +50,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
-
+nano copy_to_backup.sh
 
 ==========
 5. What are the permissions on your copy_to_backup.sh.
@@ -58,7 +66,8 @@ What command did you use to find the permissions?
 What commands did you use to do this?  What was the output?
 ----------
 
-
+V217-M11:~ dexter.manswell85$ ls -la copy_to_backup.sh 
+-rw-r--r--  1 dexter.manswell85  ACADEMIC\Domain Users  4 Feb 20 11:21 copy_to_backup.sh
 
 ==========
 7. Try executing the file!
@@ -68,14 +77,15 @@ $ ./copy_to_backup.sh
 What command did you use to try to execute the file?  What happens?
 ----------
 
-
+V217-M11:~ dexter.manswell85$ ./copy_to_backup.sh
+-bash: ./copy_to_backup.sh: Permission denied
 
 ==========
 8. Open the file with nano
 
 What command did you use to do this?
 ----------
-
+nano copy_to_backup.sh
 
 
 ==========
@@ -89,7 +99,11 @@ Don't forget the first line of your shell script! It should begin with #!/bin/ba
 
 Write out the code in your file below...
 ----------
+mkdir backup
 
+cp -r *.txt backup/
+
+echo "i'm done backing up"
 
 
 ==========
@@ -104,14 +118,14 @@ Write out the code in your file below...
 What commands did you use to do this?
 ----------
 
-
+V217-M11:test dexter.manswell85$ mkdir 1.txt 2.txt
 
 ==========
 12. Move the script that you created into this directory.
 
 What commands did you use to do this?
 ----------
-
+V217-M11:test dexter.manswell85$ mv ../copy_to_backup.sh /Users/dexter.manswell85/test/
 
 
 ==========
@@ -120,6 +134,7 @@ What commands did you use to do this?
 What commands did you use to do this?
 ----------
 
+bash copy_to_backup.sh
 
 
 ==========
@@ -127,3 +142,11 @@ What commands did you use to do this?
 
 What commands did you use to do this?  Show the output.
 ----------
+
+V217-M11:test dexter.manswell85$ bash copy_to_backup.sh 
+i'm done backing up
+V217-M11:test dexter.manswell85$ ls
+1.txt			2.txt			backup			copy_to_backup.sh
+V217-M11:test dexter.manswell85$ ls backup/
+1.txt	2.txt
+V217-M11:test dexter.manswell85$ 
