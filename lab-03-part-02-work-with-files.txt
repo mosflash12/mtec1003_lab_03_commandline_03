@@ -37,6 +37,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
+foo.txt
 
 
 ==========
@@ -45,6 +46,9 @@ Copy and paste the output below.
 $ touch bar.txt
 ----------
 
+ent-v314-007:my_files student$ touch bar.txt
+ent-v314-007:my_files student$ ls
+bar.txt	foo.txt
 
 
 ==========
@@ -52,7 +56,11 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+total 0
+drwxr-xr-x  4 student  staff  136 Feb 19 18:46 .
+drwxr-xr-x  7 student  staff  238 Feb 19 18:45 ..
+-rw-r--r--  1 student  staff    0 Feb 19 18:46 bar.txt
+-rw-r--r--  1 student  staff    0 Feb 19 18:46 foo.txt
 
 
 ==========
@@ -62,13 +70,20 @@ Copy and paste the output below.
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
 
-
+ent-v314-007:my_files student$ cp bar.txt baz.txt
+ent-v314-007:my_files student$ ls
+bar.txt	baz.txt	foo.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+ent-v314-007:my_files student$ rm bar.txt
+ent-v314-007:my_files student$ ls
+baz.txt	foo.txt
+ent-v314-007:my_files student$ 
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
@@ -76,6 +91,9 @@ Write the command that you used to remove the file.  Copy and paste the output o
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
+ent-v314-007:my_files student$ mv foo.txt qux.txt
+ent-v314-007:my_files student$ ls
+baz.txt	qux.txt
 
 
 ==========
@@ -91,6 +109,9 @@ Write the command that you used to move the file.  Copy and paste the output of 
 Write out the command that you used and what happened.
 ----------
 
+ent-v314-007:mtec1003-lab-03 student$ rm -r my_files/
+ent-v314-007:mtec1003-lab-03 student$ ls
+books	logs	web
 
 
 ==========
@@ -99,7 +120,8 @@ Write out the command that you used and what happened.
 Write out the command that you used and what happened.
 ----------
 
-
+ent-v314-007:mtec1003-lab-03 student$ rm my_files/
+rm: my_files/: is a directory
 
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1003-lab-03 directory!  
@@ -120,8 +142,9 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
+i used [[ ent-v314-007:mtec1003-lab-03 student$ cat /Users/student/mtec1003-lab-03/books/other/pg1232.txt ]] 
 
-
+it showed a very large ammount of text..
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -133,6 +156,16 @@ Use the command, head, on the file to show the contents of the beginning of the 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
 
+ent-v314-007:mtec1003-lab-03 student$ head /Users/student/mtec1003-lab-03/books/other/pg1232.txt 
+The Project Gutenberg EBook of The Prince, by Nicolo Machiavelli
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
+
+
+Title: The Prince
 
 
 ==========
