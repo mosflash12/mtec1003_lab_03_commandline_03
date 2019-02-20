@@ -178,7 +178,17 @@ Use tail on the file to show the contents of the end of the file.
 Write the command that you used below.  Write the last line of the output below.
 ----------
 
+V217-M06:mtec1003-lab-03 dexter.manswell85$ tail /Users/dexter.manswell85/mtec1003-lab-03/books/other/pg1232.txt 
 
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 ==========
 19. Using the same file...
@@ -189,7 +199,9 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+q quits 
 
+space bar skips through the file
 
 
 ==========
@@ -197,22 +209,31 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less - seeing less ofthe document
+more - seeing more of the document
+cat - showing the document
+tail showing bottom of the document
+head - showing top of the document
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 
+wc -w
 
+52639
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l
 
+5063
 
 ==========
 23.  Make sure you're in the books/other folder.  Copy all of the txt files from that folder to your home directory using wildcard matching.
 
 Write the command that you used below.
 ----------
+cp pg1232.txt /Users/dexter.manswell85//pg1232copy.txt
